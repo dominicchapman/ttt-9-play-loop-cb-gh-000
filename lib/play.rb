@@ -37,5 +37,10 @@ end
 
 # Define your play method below
 def play(board)
-  
+  # maximum of 9 turns
+  plays = 0
+  until plays == 10
+    turn(board)
+    plays += 1
+  end
 end
